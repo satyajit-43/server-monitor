@@ -12,7 +12,7 @@ function ServerStats() {
   useEffect(() => {
     const fetchStats = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/api/server-stats');
+        const response = await axios.get('https://server-monitor-xn7s.onrender.com');
         setStats(response.data);
         
         // Update CPU history (keep last 10 entries)
